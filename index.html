@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>রাজশাহী সিল্ক জরিপ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-2 text-center text-teal-700">🧵 রাজশাহী সিল্ক: ব্যবহার ও বাজার বিশ্লেষণ</h1>
+    <p class="text-center text-gray-700 mb-6">
+      রাজশাহী সিল্ক বাংলাদেশের একটি ঐতিহ্যবাহী ও স্বনামধন্য শিল্প। এই গবেষণার মূল উদ্দেশ্য হলো—সাধারণ মানুষের সিল্ক ব্যবহারের অভ্যাস, গুণমান সম্পর্কে মতামত, বাজারমূল্য উপলব্ধি এবং ডিজিটাল মাধ্যমে (যেমন: ইউটিউব, ফেসবুক) প্রচারের প্রয়োজনীয়তা বিশ্লেষণ করা।<br><br>
+      প্রশ্নপত্রের মাধ্যমে সংগ্রহকৃত তথ্য রাজশাহী সিল্কের উন্নয়ন, ডিজিটাল বিপণন এবং বাজার সম্প্রসারণে ভূমিকা রাখতে পারবে বলে আশা করা যাচ্ছে।
+    </p>
+    <form id="silkSurveyForm" class="space-y-6 bg-gray-50 p-6 rounded-lg shadow border border-gray-200">
+
+      <!-- Section: General Info -->
+      <h2 class="text-xl font-semibold text-gray-700">১. সাধারণ তথ্য</h2>
+      <div>
+        <label class="block font-medium mb-1">1. আপনার বয়স কত?</label>
+        <select name="age" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>১৮ বছরের নিচে</option>
+          <option>১৮–২৫ বছর</option>
+          <option>২৬–৩৫ বছর</option>
+          <option>৩৬–৫০ বছর</option>
+          <option>৫১ বছরের বেশি</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">2. আপনার লিঙ্গ:</label>
+        <select name="gender" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>পুরুষ</option>
+          <option>নারী</option>
+          <option>অন্যান্য</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">3. আপনার পেশা কী?</label>
+        <select name="profession" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>শিক্ষার্থী</option>
+          <option>চাকরিজীবী</option>
+          <option>ব্যবসায়ী</option>
+          <option>গৃহিণী</option>
+          <option>অন্যান্য</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">4. আপনি কোথায় বসবাস করেন?</label>
+        <select name="location" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>রাজশাহী</option>
+          <option>ঢাকা</option>
+          <option>অন্যান্য</option>
+        </select>
+      </div>
+
+      <!-- Section: Usage Habits -->
+      <h2 class="text-xl font-semibold text-gray-700 pt-4">২. সিল্ক কাপড় ব্যবহারের অভ্যাস</h2>
+      <div>
+        <label class="block font-medium mb-1">5. আপনি কি কখনও রাজশাহী সিল্ক পরিধান করেছেন?</label>
+        <select name="wornSilk" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>হ্যাঁ</option>
+          <option>না</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">6. আপনি কত ঘন ঘন সিল্ক কাপড় পরেন?</label>
+        <select name="frequency" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>নিয়মিত</option>
+          <option>মাঝে মাঝে</option>
+          <option>খুব কম</option>
+          <option>কখনও না</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">7. কোন ধরণের সিল্ক কাপড় আপনি ব্যবহার করেছেন?</label>
+        <input type="text" name="types" placeholder="যেমন: শাড়ি, পাঞ্জাবি" class="w-full border rounded p-2" required>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">8. সাধারণত কোন উপলক্ষে আপনি সিল্ক পরেন?</label>
+        <input type="text" name="occasions" placeholder="যেমন: বিয়ে, উৎসব" class="w-full border rounded p-2" required>
+      </div>
+
+      <!-- Section: Purchase Preferences -->
+      <h2 class="text-xl font-semibold text-gray-700 pt-4">৩. ক্রয় সম্পর্কিত পছন্দ</h2>
+      <div>
+        <label class="block font-medium mb-1">9. আপনি সাধারণত কোথা থেকে সিল্ক কাপড় কিনে থাকেন?</label>
+        <select name="purchaseSource" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>স্থানীয় বাজার</option>
+          <option>রাজশাহী সিল্ক এম্পোরিয়াম</option>
+          <option>অনলাইন স্টোর</option>
+          <option>বুটিক বা ব্র্যান্ড শপ</option>
+          <option>আমি কিনি না</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">10. একটি সিল্ক পণ্যের জন্য আপনার সাধারণ বাজেট কত?</label>
+        <select name="budget" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>১০০০ টাকার কম</option>
+          <option>১০০০–৩০০০ টাকা</option>
+          <option>৩০০০–৫০০০ টাকা</option>
+          <option>৫০০০ টাকার বেশি</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">11. সিল্ক কেনার সময় আপনি কী বিষয়কে বেশি গুরুত্ব দেন?</label>
+        <input type="text" name="purchasePreference" placeholder="যেমন: মান, দাম" class="w-full border rounded p-2" required>
+      </div>
+
+      <!-- Section: Quality Feedback -->
+      <h2 class="text-xl font-semibold text-gray-700 pt-4">৪. গুণমান সংক্রান্ত মতামত</h2>
+      <div>
+        <label class="block font-medium mb-1">12. আপনার মতে রাজশাহী সিল্কের গুণমান কেমন?</label>
+        <select name="qualityOpinion" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>চমৎকার</option>
+          <option>ভালো</option>
+          <option>মাঝারি</option>
+          <option>খারাপ</option>
+          <option>জানি না</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">13. রাজশাহী সিল্কের দাম গুণমানের সঙ্গে মানানসই কি?</label>
+        <select name="priceVsQuality" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>হ্যাঁ</option>
+          <option>না</option>
+          <option>নিশ্চিত না</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">14. আপনি কি কখনও স্থায়িত্ব বা রঙ নিয়ে সমস্যা দেখেছেন?</label>
+        <select name="productIssue" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>হ্যাঁ</option>
+          <option>না</option>
+          <option>প্রযোজ্য নয়</option>
+        </select>
+      </div>
+
+      <!-- Section: Awareness & Promotion -->
+      <h2 class="text-xl font-semibold text-gray-700 pt-4">৫. সচেতনতা ও ডিজিটাল প্রচার</h2>
+      <div>
+        <label class="block font-medium mb-1">15. আপনি কি জানেন রাজশাহী সিল্ক GI ট্যাগ পেয়েছে?</label>
+        <select name="knowGI" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>হ্যাঁ</option>
+          <option>না</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">16. আপনি কি কখনও ইউটিউব/ফেসবুকে রাজশাহী সিল্ক নিয়ে কোনো ভিডিও দেখেছেন?</label>
+        <select name="seenVideo" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>হ্যাঁ</option>
+          <option>না</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">17. আপনার মতে রাজশাহী সিল্কের প্রচারে ইউটিউব/ফেসবুক সহায়ক কি?</label>
+        <select name="promoUseful" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>একেবারে সহায়ক</option>
+          <option>সহায়ক</option>
+          <option>নিরপেক্ষ</option>
+          <option>সহায়ক নয়</option>
+          <option>একেবারে সহায়ক নয়</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-medium mb-1">18. আপনি কি অনলাইনে রাজশাহী সিল্ক কিনতে আগ্রহী?</label>
+        <select name="buyOnline" class="w-full border rounded p-2" required>
+          <option value="" disabled selected>-- নির্বাচন করুন --</option>
+          <option>হ্যাঁ</option>
+          <option>না</option>
+          <option>হয়তো</option>
+        </select>
+      </div>
+      <div class="text-center pt-4">
+        <button type="submit" class="bg-teal-600 text-white py-2 px-6 rounded hover:bg-teal-700 transition-all">জমা দিন</button>
+      </div>
+    </form>
+  </div>
+  <script>
+    const form = document.getElementById("silkSurveyForm");
+
+    // যেকোনো ফিল্ড ফাঁকা থাকলে সাবমিট হবে না
+    function validateForm() {
+      const requiredFields = [
+        'age', 'gender', 'profession', 'location',
+        'wornSilk', 'frequency', 'types', 'occasions',
+        'purchaseSource', 'budget', 'purchasePreference',
+        'qualityOpinion', 'priceVsQuality', 'productIssue',
+        'knowGI', 'seenVideo', 'promoUseful', 'buyOnline'
+      ];
+      for (let field of requiredFields) {
+        const el = form.elements[field];
+        if (!el || !el.value || el.value === "") {
+          alert("অনুগ্রহ করে সকল প্রশ্নের উত্তর দিন।");
+          el.focus();
+          return false;
+        }
+      }
+      return true;
+    }
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      if (!validateForm()) return;
+      const formData = new FormData(form);
+      const url = "https://script.google.com/macros/s/AKfycbzLkMJNMBBW70jZrmxNDqinlY4NqzSVHSy4ihCONw91AxhsMOhxp0LclSeAZnwXZD4HrQ/exec"; // এখানে আপনার Web App URL বসান
+      try {
+        const res = await fetch(url, {
+          method: "POST",
+          body: formData // 👉 FormData দিয়েই পাঠান, JSON নয়!
+        });
+
+        if (res.ok) {
+          alert("আপনার তথ্য সফলভাবে জমা হয়েছে। ধন্যবাদ!");
+          form.reset();
+        } else {
+          alert("জমা দিতে সমস্যা হয়েছে। দয়া করে আবার চেষ্টা করুন।");
+        }
+      } catch (err) {
+        alert("সার্ভারের সাথে সংযোগে সমস্যা হয়েছে।");
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
